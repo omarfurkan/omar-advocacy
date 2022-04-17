@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Criminal Defense",
+    "img": "https://i.ibb.co/5GdKkxk/df.jpg",
+    "price": "4000",
+    "description": "Defend individuals who have been accused of committing a crime. Counduct research, analyze cases and present their findings in court in an effort to gain the defendant's freedom or negotiate a plea bargain or settlement."
+  },
+  {
+    "id": 2,
+    "name": "Drug Crimes",
+    "img": "https://i.ibb.co/N6SVmxH/z-2.jpg",
+    "price": "3500",
+    "description": "A drug-related such crime to possess, manufacture, or distribute drugs classified as having a potential for abuse (such as cocaine, heroin, morphine and amphetamines). Drugs are also related to crime as drug trafficking and drug production are often controlled by drug cartels, organised crime and gangs"
+  },
+
+  {
+    "id": 3,
+    "name": "Legal Advisor",
+    "img": "https://i.ibb.co/kKq17wC/a.jpg",
+    "price": "18000",
+    "description": "Advice include researching and evaluating different risk factors and offering proactive advice on possible legal issues. Maintain current knowledge of laws and provide clarification on legal language and advise on Direction and Management."
+  },
+  {
+    "id": 4,
+    "name": "Civil Litigation",
+    "img": "https://i.ibb.co/Xy87DgR/d-2.jpg",
+    "price": "6500",
+    "description": "Conducting pre-claim investigation, legal research and initial case assessments.Drafting pleadings, motions and appellate documents and filing them with the court.Performing administrative duties (calendar hearings and deadlines, organize case files, manage logistics etc)"
+  },
+
+  {
+    "id": 5,
+    "name": "Corporate Legal Issues",
+    "img": "https://i.ibb.co/D40Gk4D/z.jpg",
+    "price": "4000",
+    "description": "As a Corporate lawyers, I am experts in commercial law. Tasked with ensuring a company's transactions comply with corporate laws and regulations. Work as part of a company's legal team. Duties include preparing documents, assessing partnerships, and negotiating deals."
+  },
+  {
+    "id": 6,
+    "name": "Trust & Estates",
+    "img": "https://i.ibb.co/1fPf4PZ/s.jpg",
+    "price": "9000",
+    "description": "Real estate solution,as  professionals I oversee the legal aspects of real estate transactions. They prepare and review legal documents relating to real estate, negotiate the terms and conditions of real estate transactions, and facilitate the transfer of titles."
+  }
+]
