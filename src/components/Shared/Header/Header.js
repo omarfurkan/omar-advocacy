@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <Navbar sticky='top' bg="light" expand="lg">
+            <Navbar fixed='top' bg="light" expand="lg">
                 <Container >
                     <Navbar.Brand as={Link} to="/">OmarAdvocacy</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

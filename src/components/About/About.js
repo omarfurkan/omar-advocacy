@@ -4,8 +4,8 @@ import aboutGoal from '../../images/about-goal.jpg'
 
 const About = () => {
     return (
-        <div className='container'>
-            <h2 className='text-center my-5'>About</h2>
+        <div className='container pt-5'>
+            <h2 className='text-center my-5 text-primary'>About</h2>
             <div className='about-container'>
                 <div className="about-text">
                     <h2>My Goal and Achievement</h2>
