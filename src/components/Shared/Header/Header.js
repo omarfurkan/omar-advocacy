@@ -6,11 +6,11 @@ const Header = () => {
     return (
         <div>
             <Navbar sticky='top' bg="light" expand="lg">
-                <Container>
+                <Container >
                     <Navbar.Brand as={Link} to="/">OmarAdvocacy</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="ms-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
@@ -19,7 +19,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </div >
     );
 };
 
