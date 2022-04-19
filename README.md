@@ -1,3 +1,16 @@
+# omarAdvocacy
+
+### Features and Functionality of omarAdvocacy website
+
+- Individual personality website of a lawyer containing route of home, about, blog and log in.
+
+- The home page includes services and a client testimonial section. Services section holds direction to checkout route as protected.
+
+* Includes fake data for services and some information about my goal on the about page.
+
+- SignIn and Login form is authenticated and also includes the google authorization login method.
+- On this website React bootstrap, bootstrap 5, and toast are used.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,7 +22,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://omar-advocacy.web.app/](https://omar-advocacy.web.app/) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
