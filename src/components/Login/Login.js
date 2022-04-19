@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -11,6 +11,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
     const navigate = useNavigate();
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
 
 
@@ -34,6 +35,11 @@ const Login = () => {
     }
 
 
+    const resetPassword = async () => {
+        await sendPasswordResetEmail(email);
+    }
+
+
     return (
         <div className='container form-container'>
             <h2 className='text-center text-primary mb-4'>Login</h2>
@@ -49,6 +55,8 @@ const Login = () => {
                 <p className='text-danger'>{error?.message}</p>
                 <button type="submit" className="btn btn-primary px-5">Login</button>
             </form>
+
+            <p className='mt-2'>Forget Password? <Link className='text-danger' to='/register' onClick={resetPassword}>Reset Password</Link></p>
             <p className='mt-2'>New at omarAdvocacy? <Link className='text-primary' to='/register'>Create an account</Link></p>
             <SocialLogin></SocialLogin>
         </div>

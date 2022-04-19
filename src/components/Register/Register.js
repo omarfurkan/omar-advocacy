@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Register = () => {
@@ -11,7 +12,7 @@ const Register = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth)
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true })
 
 
     if (user) {
@@ -62,6 +63,7 @@ const Register = () => {
                 <button type="submit" className="btn btn-primary px-5">Register</button>
             </form>
             <p className='mt-2'>Already have an account? <Link className='text-primary' to='/login'>Login</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
