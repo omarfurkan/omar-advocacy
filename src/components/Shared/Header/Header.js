@@ -25,7 +25,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             {
                                 user ?
-                                    <button style={{ 'textDecoration': 'none' }} className='btn btn-link text-dark' onClick={handleSignOut}>Sign out</button> :
+                                    <button style={{ textDecoration: 'none' }} className='btn btn-link text-dark' onClick={handleSignOut}>Sign out</button> :
                                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
                             }
                         </Nav>

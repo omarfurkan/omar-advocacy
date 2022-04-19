@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import './Login.css'
+import SocialLogin from '../SocialLogin/SocialLogin';
+import './Login.css';
+
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -48,6 +50,7 @@ const Login = () => {
                 <button type="submit" className="btn btn-primary px-5">Login</button>
             </form>
             <p className='mt-2'>New at omarAdvocacy? <Link className='text-primary' to='/register'>Create an account</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
