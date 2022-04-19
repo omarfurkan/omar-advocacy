@@ -12,8 +12,7 @@ const Register = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true })
-
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     if (user) {
         navigate('/');
@@ -30,7 +29,7 @@ const Register = () => {
         setConfirmPassword(event.target.value)
     }
 
-    const handleCreateUser = event => {
+    const handleCreateUser = async (event) => {
         event.preventDefault();
         if (password !== confirmPassword) {
             setError('your password did not match')
@@ -40,7 +39,7 @@ const Register = () => {
             setError('password must be 6 character')
         }
 
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
     }
 
     return (
