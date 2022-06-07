@@ -2,6 +2,10 @@
 
 ### Features and Functionality of omarAdvocacy website
 
+- Authentication Facilities
+- Induvial Service Package
+-Fully responsive and user friendly
+
 - Individual personality website of a lawyer containing route of home, about, blog and log in.
 
 - The home page includes services and a client testimonial section. Services section holds direction to checkout route as protected.
