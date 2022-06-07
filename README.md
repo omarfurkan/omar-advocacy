@@ -4,7 +4,7 @@
 
 - Authentication Facilities
 - Induvial Service Package
--Fully responsive and user friendly
+- Fully responsive and user friendly
 
 - Individual personality website of a lawyer containing route of home, about, blog and log in.
 
